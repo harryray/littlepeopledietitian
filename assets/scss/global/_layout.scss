@@ -20,6 +20,13 @@ html.bouncer-showing {
 }
 .block {
     margin: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+    @media(min-width: 1024px) {
+        padding-top: 91px;
+        padding-bottom: 91px;
+    }
 
     &:focus {
         outline: none;

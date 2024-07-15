@@ -23,7 +23,6 @@ background--eggshell
 
 			<div 
 			class="
-			<?php echo $image ? 'col-lg-8' : ''; ?> 
 			col-12 
 			hero__content-wrap">
 

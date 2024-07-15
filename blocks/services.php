@@ -19,8 +19,16 @@ background--white">
       <div 
       class="
       row">
-        <h2><?php echo $title; ?></h2>
-        <?php echo $text; ?>
+        
+        <div 
+        class="
+        col-12">
+        
+          <h2><?php echo $title; ?></h2>
+          <?php echo $text; ?>
+        
+        </div>
+      
       </div>
 
       <div 

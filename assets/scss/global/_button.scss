@@ -8,12 +8,13 @@
 
 	&--primary,
 	&--ghost {
-		border: 1px solid $grey;
+		border: 1px solid $burnter-orange;
 		padding: 12px 20px;
 		font-weight: 800;
 		text-transform: uppercase;
 		display: block;
 		text-align: center;
+		color: $white;
 
 		@media(min-width: 992px) {
 			display: inline-block;
@@ -21,38 +22,24 @@
 
 		&:hover {
 			color: $white;
-			background: $grey;
+			background: $burnt-orange;
 		}
+	}
+
+	&--primary {
+		border-radius: 50px;
+		background: $burnter-orange;
+		font-weight: 400;
+		text-transform: none;
 	}
 
 	&--ghost {
-		border: 1px solid $white;
-		color: $white;
+		border: 1px solid $burnter-orange;
+		color: $burnter-orange;
 
 		&:hover {
-			color: $grey;
-			background: $white;
+			color: $burnt-orange;
+			border-color: $burnt-orange;
 		}
-	}
-
-	&.button--lozenge {
-			appearance: none;
-			background: transparent;
-			border: 1px solid $blue--superdark;
-			color: $blue--superdark;
-			font-size: .8125rem;
-			line-height: 193%;
-			padding: 0.8125rem 2.293em;
-			border-radius: 5.555em;
-			height: auto;
-			white-space: nowrap;
-			overflow: hidden;
-			transition: background-color 150ms ease-out;
-			cursor: pointer;
-
-			&:hover {
-				color: $white;
-				background: $blue--superdark;
-			}
 	}
 }

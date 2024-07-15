@@ -5,10 +5,10 @@
 	padding: 300px 0 45px 0;
   min-height: 100svh;
   display: flex;
-    align-items: center;
+  align-items: center;
 
 	@media(min-width: 1024px) {
-  	padding: 178px 0;
+  	padding: 120px 0;
   }
 
 	&__button-wrap {
@@ -54,7 +54,6 @@
 	&__content-wrap {
 		position: relative;
 		z-index: 3;
-		pointer-events: none;
 	}
 
 	&__image {
