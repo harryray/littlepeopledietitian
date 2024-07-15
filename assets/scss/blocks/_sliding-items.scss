@@ -1,0 +1,159 @@
+.sliding-items {
+	background: #E9E3DE;
+/*
+	padding: 75px 0;
+
+	@media(min-width: 1024px) {
+		padding: 100px 0 150px;
+	}
+*/
+
+	padding: $vertical-block-padding--mobile 20px;
+
+	@media(min-width: 1024px) {
+		padding: $vertical-block-padding--desktop 20px;
+	}
+
+	>.container {
+	>.row {
+		margin-bottom: -16px;
+	}
+	}
+
+	h2 {
+		@media(max-width: 1024px) {
+			font-size: 2.101rem;
+		}
+	}
+
+	&__frame { 
+		width: 100%;
+		padding: 0; 
+		max-width: 1040px;
+		padding: 0 20px;
+		margin: auto;
+		overflow: visible!important;
+		margin-top: 50px;
+		padding-bottom: 50px;
+
+		@media(max-width: 1024px) {
+			padding: 0;
+		}
+	}
+	
+	&__slidee { 
+		margin: 0; 
+		padding: 0; 
+		height: 100%; 
+		list-style: none; 
+		display: flex;
+
+		> div {  
+			height: 100%; 
+			min-width: 325px;
+			position: relative;
+			padding: 0 25px;
+
+			&::before {
+				position: absolute;
+				content: '';
+				left: 0;
+				height: 100%;
+				width: 1px;
+				top: 0;
+				background: $blue--superdark;
+			}
+		}	
+	}
+
+	&__title {
+		max-width: 53rem;
+    	
+    	@media(min-width: 1024px) {
+			font-size: $size-47;
+			padding-right: 20px;
+
+			// account for the need to have less padding above this section than others when dealing with
+			// a previous 'forced-overlap' block (as per Our Culture page)
+			margin-top: -26px;
+		}
+
+		@media(max-width: 1024px) {
+			// shore up to 100px gap between this and 
+			// prev section (forced-overlap block on our culture page)
+			margin-top: 13px;
+		}
+	}
+
+	&__title-wrap {
+		max-width: 1000px;
+		padding: 0 0px;
+		margin: auto;
+	}
+
+	&__image-wrap {
+		height: 4.375rem;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		padding-top: 1.875rem;
+		margin-bottom: 1.875rem;
+	}
+
+	&__main-text,
+	&__blurb {
+		font-size: $size-12;
+		line-height: 175%;
+		font-weight: normal;
+
+		p {
+			&:first-of-type {
+				margin-top: 0;
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__main-text {
+		font-weight: bold;
+		margin-bottom: 1.25rem;
+	}
+
+	/* Scrollbar */
+	&__scrollbar-wrap {
+		max-width: 1000px;
+		padding: 0 0;
+		margin: auto;
+
+		@media(max-width: 1024px) {
+		    margin-right: -20px;
+		}
+	}
+	
+	&__scrollbar {
+		margin: 0 0 1em 0;
+		height: 2px;
+		background: #ccc;
+		line-height: 0;
+
+		@media(max-width: 1024px) {
+		    margin-top: 50px;
+		}
+	}
+	&__handle {
+		width: 100px;
+		height: 100%;
+		background: #292a33;
+		cursor: pointer;
+
+		.mousearea {
+			position: absolute;
+			top: -9px;
+			left: 0;
+			width: 100%;
+			height: 20px;
+		}
+	}
+}

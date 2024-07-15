@@ -1,0 +1,182 @@
+.documents-block {
+	background: $sand--75;
+	//padding: 160px 30px;
+	
+	padding: $vertical-block-padding--desktop 20px;
+
+	// @media(min-width: 1024px) {
+	// 	padding: $vertical-block-padding--desktop 20px;
+	// }
+
+	&__inner {
+	    margin: auto;
+	    max-width: 1000px;
+	    padding: 0 0;
+	} 
+
+	.image-text__cta {
+	    display: inline-block;
+	    padding-left: 0;
+	    padding-right: 64px;
+
+			@media(min-width: 1024px) {
+				margin-top: 15px;
+			}
+
+	    &::before {
+	    	right: -25px;
+	    	left: auto;
+	    }
+
+	    .arrow {
+	    	left: auto;
+	    	right: 0;
+	    }
+	}
+
+    > svg {
+			position: absolute;
+	    top: 0;
+	    right: 0;
+			transform: translate(292px, -169px);
+	
+			@media(max-width: 1024px) {
+					transform: translate(210px, -240px);
+			width: 72%;
+
+			g {
+				opacity: 1!important;
+			}
+			}
+
+			@media(max-width: 768px) {
+				transform: translate(210px, -290px);
+			}
+
+			@media(max-width: 525px) {
+				transform: translate(100px, -280px);
+			}
+		    
+	    path {
+	    	//animation: 300ms cubic-bezier(.64,.04,.35,1) 15ms forwards lineReveal;
+	    	//opacity: 0;
+	    }
+    }
+
+    &__title {		
+			font-size: $size-35;
+			font-family: $heading-font;
+			line-height:128%;
+			margin: auto;
+			font-weight: normal!important;
+			margin-bottom: 32px;
+    }
+
+
+    &__title-wrap {
+		position: relative;
+		width: 100%;
+
+		&::after {
+			content:'';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 1px;
+			background-color: $blue--superdark;
+			width: 100%;
+
+		}
+	}
+	
+	&__documents {
+
+		> .container {
+			margin: auto;
+			max-width: 1040px;
+			padding: 0 1.25rem 0 1.25rem;
+
+			@media(max-width: 1024px) {
+				max-width: 1000px;
+				padding: 0 0 0 0;
+			}
+		}
+
+		.image-text__cta {
+			opacity:1;
+		}
+	}	
+
+	&__document {
+		display: flex;
+		position: relative;
+		min-height: 144px;
+    align-items: center;
+    padding: 32px 0;
+
+		&--thumbnail {
+			width: 60px;
+			height: 80px;
+			margin-right: 32px;
+			display: none;
+
+			@media(min-width: 1024px) {
+				display: block;
+			}
+
+			img {
+				object-fit: cover;
+				object-position: center;
+					width: 100%;
+						height: 100%;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			height: 1px;
+			background: $blue--superdark;
+		}
+
+		.col-md-2 {
+			text-align: right;
+
+			.image-text__button-wrap {
+				margin-top: 0;
+			}
+		}
+
+		.col-md-10 {
+			display: flex;
+			align-items: center;
+		}
+
+		@media(max-width: 992px) {
+			flex-wrap: wrap;
+
+			.col-md-10,
+			.col-md-2 {
+				width: 100%;
+			}
+
+			.col-md-2 {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+
+.individual-investor-view {
+	.documents-block {
+		> svg {
+			@media(min-width: 1024px) {
+			    transform: translate(292px, -284px);
+			}
+		}
+	}
+}

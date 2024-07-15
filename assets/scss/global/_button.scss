@@ -1,0 +1,58 @@
+.button {
+	display: inline-block;
+	width: auto;
+	padding: 12px 20px;
+	border-radius: 0px;
+	transition: all 250ms ease-in-out;
+	color: $grey;
+
+	&--primary,
+	&--ghost {
+		border: 1px solid $grey;
+		padding: 12px 20px;
+		font-weight: 800;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+
+		@media(min-width: 992px) {
+			display: inline-block;
+		}
+
+		&:hover {
+			color: $white;
+			background: $grey;
+		}
+	}
+
+	&--ghost {
+		border: 1px solid $white;
+		color: $white;
+
+		&:hover {
+			color: $grey;
+			background: $white;
+		}
+	}
+
+	&.button--lozenge {
+			appearance: none;
+			background: transparent;
+			border: 1px solid $blue--superdark;
+			color: $blue--superdark;
+			font-size: .8125rem;
+			line-height: 193%;
+			padding: 0.8125rem 2.293em;
+			border-radius: 5.555em;
+			height: auto;
+			white-space: nowrap;
+			overflow: hidden;
+			transition: background-color 150ms ease-out;
+			cursor: pointer;
+
+			&:hover {
+				color: $white;
+				background: $blue--superdark;
+			}
+	}
+}

@@ -1,0 +1,111 @@
+body {
+	font-family: $body-font;
+	font-weight: 300;
+	color: $blue--superdark;
+
+	* {
+	    box-sizing: border-box;
+	}
+}
+a {
+	text-decoration: none;
+	color: $blue--superdark;
+}
+main .block:nth-of-type(2) {
+
+}
+.title {
+	color: $black;
+	font-family: $heading-font;
+	font-weight: 300;
+
+	@media(min-width: 992px) {
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+	
+}
+h5 {
+	font-size: $size-11;
+	letter-spacing: 0.0625rem;
+	font-weight: bold;	
+	text-transform: uppercase;
+}
+.subheading {
+	font-size: $size-20;
+	line-height: 135%;
+	font-family: $heading-font;
+	font-weight: normal;
+	color: $blue--superdark;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	margin-top: 1.2rem;
+	padding-top: 1.968rem;
+	margin-bottom: 1.25rem;
+
+	&::before {
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: $blue--superdark;
+	}
+
+	@media(min-width: 1024px) {
+		font-size: $size-26;
+		line-height: 138%;
+	}
+}
+.mb {
+	&-5 {
+		margin-bottom: 5.625rem!important;
+	}
+}
+
+.background {
+	&--eggshell {
+		background-color: $eggshell;
+	}
+	&--white {
+		background-color: $white;
+	}
+	&--burnt-orange {
+		background-color: $burnt-orange;
+	}
+	&--burnter-orange {
+		background-color: $burnter-orange;
+	}
+	&--flesh {
+		background-color: $flesh;
+	}
+	&--gold {
+		background-color: $gold;
+	}
+	&--murk {
+		background-color: $murk;
+	}
+	&--cold {
+		background-color: $cold;
+	}
+	&--logo-orange {
+		background-color: $logo-orange;
+	}
+	&--logo-murk {
+		background-color: $logo-murk;
+	}
+}

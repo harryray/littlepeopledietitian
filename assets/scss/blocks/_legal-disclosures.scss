@@ -1,0 +1,156 @@
+.legal-disclosures {
+	background: $cream;
+	//padding: 160px 30px;
+	
+	padding: 160px 20px $vertical-block-padding--mobile 20px;
+
+	@media(min-width: 1024px) {
+		padding: $vertical-block-padding--desktop 20px;
+	}
+
+	&__inner {
+	    margin: auto;
+	    max-width: 1000px;
+	    padding: 0 0;
+	} 
+
+	.image-text__cta {
+	    display: inline-block;
+	    padding-left: 0;
+	    padding-right: 64px;
+
+	    &::before {
+	    	right: -25px;
+	    	left: auto;
+	    }
+
+	    .arrow {
+	    	left: auto;
+	    	right: 0;
+	    }
+	}
+
+    > svg {
+		position: absolute;
+	    top: 0;
+	    right: 0;
+		transform: translate(292px, -169px);
+		
+        @media(max-width: 1024px) {
+            transform: translate(210px, -240px);
+    		width: 72%;
+
+    		g {
+    			opacity: 1!important;
+    		}
+        }
+
+        @media(max-width: 768px) {
+        	transform: translate(210px, -290px);
+        }
+
+        @media(max-width: 525px) {
+        	transform: translate(100px, -280px);
+        }
+		    
+	    path {
+	    	//animation: 300ms cubic-bezier(.64,.04,.35,1) 15ms forwards lineReveal;
+	    	//opacity: 0;
+	    }
+    }
+
+    &__title {
+		font-family: $heading-font;
+		font-size: $size-63;
+		line-height: 116%;
+		margin-bottom: 80px;
+
+		@media(max-width: 1024px) {
+			font-size: $size-45;
+			margin-top: -15px;
+		}
+    }
+
+
+    &__title-wrap {
+		position: relative;
+	    width: 100%;
+        padding-top: 30px;
+
+		&::after {
+			content:'';
+			position: absolute;
+			bottom: 40px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 1px;
+			background-color: $blue--superdark;
+			width: 100%;
+
+		}
+	}
+	
+	&__documents {
+		background: $cream;
+
+		> .container {
+			margin: auto;
+			max-width: 1040px;
+			padding: 0 1.25rem 15.93rem 1.25rem;
+
+			@media(max-width: 1024px) {
+				max-width: 1000px;
+				padding: 0 0 0 0;
+			}
+		}
+
+		.image-text__cta {
+			opacity:1;
+		}
+
+		h4 {
+			font-size: $size-15;
+			line-height: 167%;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.0625rem;
+			margin: 0;
+			padding: 1.875rem 0;
+		}
+	}	
+
+	&__document {
+		display: flex;
+		position: relative;
+		min-height: 110px;
+		align-items: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			height: 1px;
+			background: $blue--superdark;
+		}
+
+		.col-md-5 {
+			text-align: right;
+
+			.image-text__button-wrap {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+
+.individual-investor-view {
+	.legal-disclosures {
+		> svg {
+			@media(min-width: 1024px) {
+			    transform: translate(292px, -284px);
+			}
+		}
+	}
+}

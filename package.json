@@ -1,0 +1,17 @@
+{
+  "name": "findlay-park",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "sass assets/scss/styles.scss ./styles.css --style compressed",
+    "watch": "onchange \"assets/scss\" -- npm run sass"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "onchange": "^7.1.0"
+  },
+  "author": "Harry Ray",
+  "license": "ISC"
+}

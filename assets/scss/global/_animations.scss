@@ -1,0 +1,275 @@
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeftSmall {
+  from {
+    opacity: 0;
+    transform: translate3d(-5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightSmall {
+  from {
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUpSmall {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeftMedium {
+  from {
+    opacity: 0;
+    transform: translate3d(-12.5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeftLarge {
+  from {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightMedium {
+  from {
+    opacity: 0;
+    transform: translate3d(12.5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRightLarge {
+  from {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUpMedium {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12.5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDownMedium {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -12.5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUpLarge {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDownLarge {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes growLeft {
+  from {
+    transform: scaleX(1) translateX(0%);
+  }
+
+  to {
+    transform: scaleX(2.5) translateX(-25%);
+  }
+}
+
+@keyframes growRight {
+  from {
+    transform: scaleX(1) translateX(0%);
+  }
+
+  to {
+    transform: scaleX(2.5) translateX(25%);
+  }
+}
+
+@keyframes growRightSmall {
+  from {
+    transform: scaleX(1) translateX(0%);
+  }
+
+  to {
+    transform: scaleX(1.5) translateX(5%);
+  }
+}
+
+@keyframes toolTipFadeIn {
+  0% {
+    z-index: 5;
+  }
+
+  1% {
+    opacity: 0;
+    z-index: 5;
+    transform: translateX(-50%) translateY(105%);
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 5;
+    transform: translateX(-50%) translateY(95%);
+  }
+}
+
+.block {
+  //opacity: 0;
+  transition: 200ms ease-out;
+}
+.animations-on {
+  opacity: 1;
+
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+
+  .fadeInLeftSmall {
+  animation-name: fadeInLeftSmall;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInRightSmall {
+  animation-name: fadeInRightSmall;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInUpSmall {
+  animation-name: fadeInUpSmall;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInLeftMedium {
+  animation-name: fadeInLeftMedium;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInLeftLarge {
+  animation-name: fadeInLeftLarge;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInRightMedium {
+  animation-name: fadeInRightMedium;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInUpMedium {
+  animation-name: fadeInUpMedium;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .fadeInUpLarge {
+  animation-name: fadeInUpLarge;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  }
+
+  .growLeft {
+  animation-name: growLeft;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+  }
+  
+  .growRight {
+  animation-name: growLeft;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+  }
+
+}
+
+.reset-trigger {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 1px;
+  //background: red;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}

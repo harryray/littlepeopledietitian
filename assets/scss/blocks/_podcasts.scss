@@ -1,0 +1,124 @@
+.podcasts {
+	background: $blue--superlight;
+	//padding: 70px 30px;
+	
+	padding: $vertical-block-padding--mobile 20px;
+
+	@media(min-width: 1024px) {
+		padding: $vertical-block-padding--desktop 20px;
+	}
+
+	.container {
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	&__header {
+		border-bottom: $blue--superdark 1px solid;
+		padding: 7px 0;
+		padding-top: 0;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 2em;
+		align-items: flex-end;
+
+		h2 {
+	    	font-family: $heading-font;
+	    	margin: 0;
+	    	font-size: $size-47;
+	    	line-height: 126%;
+	    	margin-top: -7px;
+
+	    	@media(max-width: 1024px) {
+		    	font-size: $size-33;
+		    	line-height: 122%;
+		    	position: relative;
+    			top: 8px;
+	    	}
+		}
+	}
+
+	&__cta--title {
+ 		font-size: $size-13;
+ 		position: relative;
+ 		padding-right: 2.538em;
+
+ 		.arrow {
+ 			position: absolute;
+ 			right: 0;
+ 			top: 50%;
+ 			transform: translateY(-50%);
+ 		}
+	}
+
+	&__meta {
+		@media(min-width: 1024px) {
+	    	padding-right: 48px;
+	    }
+
+		p {
+			font-family: $heading-font;
+			font-size: $size-26;
+			line-height: 138%;
+
+			&:first-of-type {
+				margin-top: 0;
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		img {
+			margin-top: 1.372em;
+			max-width: 70.5%;
+			
+			@media(min-width: 1024px) {
+				max-width: 100%;
+			}
+
+			@media(max-width: 1024px) {
+				margin-bottom: 85px;
+			}
+		}
+	}
+
+	&__links {
+		display: flex;
+		//gap: 63px;
+		padding: 100px 0 70px;
+	    padding-bottom: 0;
+
+		@media(max-width: 1024px) {
+			padding: 70px 0;
+			flex-wrap: wrap;
+			padding-bottom: 0;
+		}
+		/*
+		@media(min-width: 1024px) {
+		    .col-md-8 {
+			    flex: 0 0 calc(66.666667% - 31.5px);
+	    		max-width: calc(66.666667% - 31.5px);
+    		}
+    		.col-md-4 {
+			    -ms-flex: 0 0 calc(33.333333% - 31.5px);
+			    flex: 0 0 calc(33.333333% - 31.5px);
+			    max-width: calc(33.333333% - 31.5px);
+			}
+		}
+		*/
+	}
+
+	&__link {
+		min-width: calc(33% - 53px);
+
+		&--title {
+		    font-size: $size-30;
+    		margin: 0 0 30px 0;
+    		line-height: 1.2em;
+		}
+	}
+}
+.insights-item.insights-item--podcast:last-of-type .insights-item__cta {
+    margin-bottom: 0;
+}

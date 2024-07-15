@@ -1,0 +1,15 @@
+@use "sass:color";
+
+@import "global/variables";
+@import "global/fonts";
+@import "global/defaults";
+@import "global/layout";
+@import "global/animations";
+@import "global/header";
+@import "global/footer";
+@import "global/button";
+@import "global/404";
+@import "global/preloader";
+@import "global/bouncer";
+
+@import "blocks/styles";

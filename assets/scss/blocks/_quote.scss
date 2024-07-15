@@ -1,0 +1,106 @@
+.quote-block {
+
+  .quote-wrap {
+    padding: 167px 0 167px calc((1440px - 1000px) / 2);
+    background: $red--dull;
+    max-width: 892px;
+    width: 66.3%;
+    position: relative;
+    z-index: 2;
+
+    @media(max-width: 1440px) {
+      padding: 167px 0 167px calc((100vw - 1014px) / 2);
+    }
+
+
+    @media(max-width: 1050px) {
+      padding: 167px 0 167px 20px;
+    }
+
+    @media(max-width: 1024px) {
+      padding: 80px 20px;
+      max-width: none;
+      width: 100%;
+    }
+
+    @media(max-width: 768px) {
+      padding: 60px 20px;
+    }
+  }
+
+  .quote {
+    padding: 0 40px;
+    position: relative;
+
+    &::before {
+      left: 0;
+      position: absolute;
+      content:'';
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: $cream;  
+    }
+
+    &__background {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      z-index: 1;
+
+      &--top {
+        top: 0;
+      }
+
+      &--bottom {
+        bottom: 0;
+      }
+
+      &--cream {
+        background: $cream;
+      }
+
+      &--sand--75 {
+        background: $sand--75;
+      }
+
+      &--sand {
+        background: $sand--25;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      color: $cream;  
+      padding-top: 0;
+
+      &::before {
+        display: none;
+      }
+
+      p {
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__quotee {
+      color: $cream;
+      margin-top: 1rem;
+
+      &--text {
+        font-size: .6875rem;
+        letter-spacing: .0625rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

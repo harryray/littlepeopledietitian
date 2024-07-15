@@ -1,0 +1,46 @@
+.investment-philosophy {
+
+	&__row {
+		//padding: 90px 30px;
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+			
+		padding: $vertical-block-padding--mobile 20px;
+
+		@media(min-width: 1024px) {
+			padding: $vertical-block-padding--desktop 20px;
+		}
+	}	
+
+	> .investment-philosophy__row {
+		&:nth-of-type(even) {
+			background: $cream--dark;
+		}
+		&:nth-of-type(odd) {
+			background: $cream;
+		}
+		&:first-of-type {
+			z-index: 2;
+		}
+	}
+
+	&__row--inner {
+		max-width: 1200px;
+		margin: auto;
+		display: flex;
+	}
+
+	&__image-wrap {
+		display: flex;
+	    justify-content: end;
+	}
+
+	&__image {
+		position: absolute;
+		top: calc( 100% + 90px );
+		transform: translateY(-50%);
+	    max-width: 80%;
+    	padding: 30px;
+	}
+}

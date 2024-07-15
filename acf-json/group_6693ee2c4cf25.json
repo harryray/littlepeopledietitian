@@ -1,0 +1,241 @@
+{
+    "key": "group_6693ee2c4cf25",
+    "title": "🛠️ Page Builder",
+    "fields": [
+        {
+            "key": "field_6693ef7134fca",
+            "label": "Page Builder",
+            "name": "page_builder",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6693ef7a8a89b": {
+                    "key": "layout_6693ef7a8a89b",
+                    "name": "homepage_hero",
+                    "label": "Homepage Hero",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6693ef9734fcb",
+                            "label": "Homepage Hero",
+                            "name": "homepage_hero",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6693ee7721e6f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6693f03f10d7b": {
+                    "key": "layout_6693f03f10d7b",
+                    "name": "services",
+                    "label": "Services",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6693f03f10d7d",
+                            "label": "Services",
+                            "name": "services",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6693effaf3164"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6693f47d0b7ed": {
+                    "key": "layout_6693f47d0b7ed",
+                    "name": "testimonials_slider",
+                    "label": "Testimonials Slider",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6693f47d0b7ef",
+                            "label": "Testimonials Slider",
+                            "name": "testimonials_slider",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6693f08b4156e"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6693f4ba0b7f0": {
+                    "key": "layout_6693f4ba0b7f0",
+                    "name": "image_text",
+                    "label": "Image \/ Text",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6693f4ba0b7f2",
+                            "label": "Image \/ Text",
+                            "name": "image_text",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6693f3d2b10f3"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6693f4ea0b7f3": {
+                    "key": "layout_6693f4ea0b7f3",
+                    "name": "instagram",
+                    "label": "Instagram",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6693f4ea0b7f5",
+                            "label": "Instagram",
+                            "name": "instagram",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6693f424c5936"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6693f5720bad9": {
+                    "key": "layout_6693f5720bad9",
+                    "name": "latest_blogs",
+                    "label": "Latest Blogs",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_6693f5720badb",
+                            "label": "Latest Blogs",
+                            "name": "latest_blogs",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6693f424c5936"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "discussion",
+        "comments"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1720974938
+}

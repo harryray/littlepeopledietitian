@@ -1,0 +1,46 @@
+.four-oh-four {
+	
+	&-content {
+		background:#efefee;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 45px 30px;
+
+		@media(min-width: 992px) {
+			padding: 120px 30px;
+		}
+
+		> div {
+			text-align: center;
+		}
+
+		&__title,
+		&__text {
+			color: #383836;
+			text-align: center;
+		}
+
+		&__title {
+			font-weight: 800;
+		    margin: 0;
+		    font-size: 60px;
+		    
+		    @media(min-width: 992px) {
+		    	font-size: 112px;
+		    }
+		}
+
+		&__text {
+		    margin: 40px 0;
+		    max-width: 450px;
+		    font-size: 18px;
+		    line-height: 24px;
+
+		    @media(min-width: 992px) {
+			    font-size: 24px;
+			    line-height: 38px;
+		    }
+		}
+	}
+}

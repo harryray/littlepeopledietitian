@@ -1,0 +1,20 @@
+.form {
+	padding-bottom: 115px;
+
+	h2, h3 {
+		font-family:$body-font;
+		margin: 0;
+
+		&:first-of-type {
+			margin-top: 12px;
+		}
+
+		&:nth-of-type(n+2) {
+			margin-top: 47.5px;
+		}
+	}
+
+	p {
+		margin-top: 20px;
+	}
+}

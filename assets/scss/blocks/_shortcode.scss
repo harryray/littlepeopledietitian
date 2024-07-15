@@ -1,0 +1,48 @@
+.shortcode {
+	
+	padding: $vertical-block-padding--desktop 20px;
+    background: $cream;
+    position: relative;
+
+    @media(max-width: 1024px) {
+    	padding: $vertical-block-padding--mobile 20px 40px;
+    }
+
+    .container {
+        max-width: 1000px;
+    	padding: 0 0px;
+    }
+
+    &__title {
+        font-family: $heading-font;
+        margin: 0;
+        font-size: $size-47;
+        line-height: 1em;
+        margin-bottom: 30px;
+
+        @media(max-width: 1024px) {
+        margin-bottom: 50px;
+        }
+    }
+
+    #cmplz-document {
+        max-width: none;
+
+        p,li {
+            font-size: $size-14;
+            line-height: 179%;
+
+            @media(max-width: 1024px) {
+                font-size: $size-13;
+                line-height: 177%;
+            }
+        }
+        .cmplz_consent_per_service_label {
+            display: none;
+        }
+    }
+}
+#cmplz-cookies-overview .cmplz-dropdown.cmplz-dropdown-cookiepolicy summary div, #cmplz-document .cmplz-dropdown.cmplz-dropdown-cookiepolicy summary div {
+    grid-template: "heading paragraph label checkbox chevron"!important;
+    grid-template-columns: 2fr auto 60px auto 25px!important;
+}
