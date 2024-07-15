@@ -9,6 +9,7 @@
 class="
 block 
 hero 
+homepage-hero 
 background--eggshell
 " >
 	
