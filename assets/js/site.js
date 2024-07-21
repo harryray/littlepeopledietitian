@@ -85,6 +85,8 @@
 		    lastScrollTop = scroll <= 0 ? 0 : scroll;
 		});
 
+		/* Testimonials slider */
+		jQuery('.testimonials__wrap--slider').slick();
 
 // ************************************************************************************************************ //
 	});

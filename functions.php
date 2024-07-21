@@ -78,6 +78,7 @@ function make_scripts()
         wp_enqueue_script( 'html2canvas', get_stylesheet_directory_uri().'/assets/js/html2canvas.min.js');
     }
     wp_enqueue_script( 'site', get_stylesheet_directory_uri().'/assets/js/site.js', array('jquery'), filemtime( get_stylesheet_directory() . '/assets/js/site.js' ) );
+    wp_enqueue_script( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'));
 }
 
 if( function_exists('acf_add_options_page') ) {

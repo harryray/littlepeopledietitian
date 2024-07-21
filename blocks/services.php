@@ -24,7 +24,7 @@ background--white">
         class="
         col-12">
         
-          <h2><?php echo $title; ?></h2>
+          <h2 class="heading-1"><?php echo $title; ?></h2>
           <?php echo $text; ?>
         
         </div>
@@ -34,7 +34,7 @@ background--white">
       <div 
       class="
       row">
-      <?php if($services) {
+      <?php /* if($services) {
         foreach($services as $service) { ?>
         <div 
         class="
@@ -42,7 +42,46 @@ background--white">
         col-md-4">
           <?php echo $service; ?>
         </div>
-      <?php } } ?>
+      <?php } } */ ?>
+      <!---------->
+      <!---------->
+        <div 
+          class="
+          col-12 
+          col-md-4">
+            <img src="https://littlepeopledietitian.harryray.co.uk/wp-content/uploads/2024/07/service_thumbnail_example_no_label.jpg" />
+            <a href="/">
+              <div>
+                <span>Allergy Weaning Academy</span>
+              </div>
+            </a>
+        </div>
+      <!---------->
+        <div 
+          class="
+          col-12 
+          col-md-4">
+            <img src="https://littlepeopledietitian.harryray.co.uk/wp-content/uploads/2024/07/service_thumbnail_example_no_label.jpg" />
+            <a href="/">
+              <div>
+                <span>1:1 Consults</span>
+              </div>
+            </a>
+        </div>
+      <!---------->
+        <div 
+          class="
+          col-12 
+          col-md-4">
+            <img src="https://littlepeopledietitian.harryray.co.uk/wp-content/uploads/2024/07/service_thumbnail_example_no_label.jpg" />
+            <a href="/">
+              <div>
+                <span>Free Resources</span>
+              </div>
+            </a>
+        </div>
+      <!---------->
+      <!---------->
       </div>
 
   </div>

@@ -117,7 +117,7 @@
         {
             "key": "field_6693f4104a23c",
             "label": "Link",
-            "name": "lnk",
+            "name": "link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -154,5 +154,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720972315
+    "modified": 1721067152
 }

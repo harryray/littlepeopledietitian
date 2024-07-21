@@ -1,6 +1,6 @@
 <?php 
 
-	$title = get_sub_field('testimonials_slider_title');
+	$title = get_sub_field('testimonial_slider_title');
 
 	$testimonials = get_sub_field('testimonials');
 
@@ -24,24 +24,24 @@ id="<?php echo $id; ?>">
 		class="
 		row">
 
-		<?php if($title) { ?>
-			<div 
-			class="
-			col-12">
-				<h3 
-				class="
-				title 
-				image-text__title"><?php echo $title; ?></h3>
+		<?php if($images) {  ?>
+			<div class="col-md-6 col-12">
+				<div class="image-0 testimonials-slider__image">
+					<img src="<?php echo $images[0]['image']['url']; ?>" />
+				</div>
+				<div class="image-2 testimonials-slider__image">
+					<img src="<?php echo $images[2]['image']['url']; ?>" />
+				</div>
+			</div>
+			<div class="col-md-6 col-12">
+				<div class="image-1 testimonials-slider__image">
+					<img src="<?php echo $images[1]['image']['url']; ?>" />
+				</div>
+				<div class="image-3 testimonials-slider__image">
+					<img src="<?php echo $images[3]['image']['url']; ?>" />
+				</div>
 			</div>
 		<?php } ?>
-
-		<?php if($images) {
-			foreach($images as $i => $image) { ?>
-				<div class="image-<?php echo $i; ?> testimonials-slider__image">
-					<img src="<?php echo $image['image']['url']; ?>" />
-				</div>
-		<?php	}
-		} ?>
 
 		<?php if($testimonials) { ?>
 
@@ -53,26 +53,33 @@ id="<?php echo $id; ?>">
 				<div 
 				class="testimonials__wrap">
 
-					<?php foreach($testimonials as $testimonial) { ?>
-						<div 
-						class="
-						testimonials__testimonial--container">
+					<div 
+					class="testimonials__wrap--slider">
 
+						<?php foreach($testimonials as $testimonial) { ?>
 							<div 
 							class="
-							testimonials__testimonial">
-								
+							testimonials__testimonial--container">
+
 								<div 
 								class="
-								testimonials__quote">
-									<?php echo $testimonial['testimonial']; ?>
+								testimonials__testimonial">
+
+									<span class="heading-1"><?php echo $title; ?></span>
+									
+									<div 
+									class="
+									testimonials__quote">
+										<?php echo $testimonial['testimonial']; ?>
+									</div>
+									
 								</div>
-								
+
 							</div>
 
-						</div>
+						<?php } ?>
 
-					<?php } ?>
+					</div>
 
 				</div>
 

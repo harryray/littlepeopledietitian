@@ -30,7 +30,7 @@ background--eggshell
 				class="
 				hero__content">
 					
-					<h1 class="title hero__title"><?php echo $title; ?></h1>
+					<h1 class="heading-1 title hero__title"><?php echo $title; ?></h1>
 					<?php if($link) { ?>
 						
 						<div 

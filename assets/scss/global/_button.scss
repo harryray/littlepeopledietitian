@@ -7,7 +7,8 @@
 	color: $grey;
 
 	&--primary,
-	&--ghost {
+	&--ghost,
+	&--murk {
 		border: 1px solid $burnter-orange;
 		padding: 12px 20px;
 		font-weight: 800;
@@ -26,11 +27,16 @@
 		}
 	}
 
-	&--primary {
+	&--primary,
+	&--murk {
 		border-radius: 50px;
 		background: $burnter-orange;
 		font-weight: 400;
 		text-transform: none;
+	}
+
+	&--murk {
+		border-color: $murk;
 	}
 
 	&--ghost {

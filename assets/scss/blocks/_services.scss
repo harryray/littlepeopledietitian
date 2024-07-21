@@ -1,3 +1,59 @@
 .services {
-  
+  text-align: center;
+
+  p {
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+    margin-top: 51px;
+    margin-bottom: 51px;
+  }
+
+  .container {
+
+    .row:last-of-type {
+      flex-wrap: nowrap;
+      gap: 34px;
+      justify-content: center;
+      max-width: 1440px;
+      
+      .col-12.col-md-4 {
+        height: 324px;
+        position: relative;
+        overflow: hidden;
+        max-width: 480px;
+
+        a, div {
+          display: block;
+          height: 100%;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        span {
+          position: absolute;
+          color: $white;
+          background: $murk;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-family: 'Arvo', sans-serif;
+          font-weight: bold;
+          font-size: 26px;
+          display: block;
+          max-width: 85%;
+          width: 100%;
+          padding: 12px;
+        }
+      }
+    }
+  }
 }
