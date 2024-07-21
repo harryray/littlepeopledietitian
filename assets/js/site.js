@@ -86,7 +86,10 @@
 		});
 
 		/* Testimonials slider */
-		jQuery('.testimonials__wrap--slider').slick();
+		jQuery('.testimonials__wrap--slider').slick({
+			prevArrow: document.querySelector('.testimonials__slider-prev'),
+			nextArrow: document.querySelector('.testimonials__slider-next')
+		});
 
 // ************************************************************************************************************ //
 	});

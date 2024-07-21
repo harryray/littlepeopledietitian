@@ -40,11 +40,28 @@
     justify-content: end;
     align-items: center;
 
+		a {
+			font-weight: bold;
+			font-size: 16px;
+			color: $logo-orange;
+		}
+
 		ul {
 			display: flex;
 			padding: 0;
 			margin: 0;
 			list-style-type: none;
+			width: 100%;
+			max-width: 1180px;
+			margin: auto;
+			justify-content: flex-end;
+
+			li {
+
+				&:last-of-type {
+					margin-left: 62px;
+				}
+			}
 		}
 	}
 
@@ -314,13 +331,16 @@
 
 					> a,
 					> div {
-				    	padding-bottom: 34.5px;
+						padding-bottom: 34.5px;
 						margin-bottom: -34.5px;
 						position: relative; 
 						z-index: 10;
 						display: block;
 						padding-top: 15px;
-    					margin-top: -15px;
+						margin-top: -15px;
+						color: $eggshell;
+						font-family: 'Lato';
+						font-size: 20px;
 					}
 
 			    	div {

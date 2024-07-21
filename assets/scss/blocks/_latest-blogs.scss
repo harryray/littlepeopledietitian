@@ -1,0 +1,91 @@
+.latest-blogs {
+
+  h3 {    
+    font-family: "Arvo", sans-serif;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 1.2;
+    margin-bottom: 100px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+  }
+
+  .button {
+    display: block;
+    margin-top:10px;
+    background: $burnt-orange;
+  }
+
+  &__title {
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;    
+    margin-bottom: 30px;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+  }
+
+  &__column {
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    
+    &--big {
+      padding-right: 80px;
+
+      .button {
+        margin-top: 30px;
+        display: block;
+      }
+
+      .latest-blogs {
+
+        &__blog {
+          flex-direction: column;
+        }
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__blog {
+    
+    &--small {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .latest-blogs__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        padding-right: 45px;
+        max-height: 240px;
+      }
+
+      > * {
+        width: 50%;
+      }
+
+      &:last-of-type {
+        margin-top: 50px;
+      }
+    }
+  }
+}

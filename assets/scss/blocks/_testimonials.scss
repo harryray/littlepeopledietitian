@@ -30,6 +30,7 @@
 
 			&.testimonials__slider-prev {
 				left: -75px;
+				transform: translateY(-50%) rotate(180deg);
 			}
 
 			&.testimonials__slider-next {

@@ -158,4 +158,26 @@ function register_my_menus() {
     )
     );
 }
-    add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'register_my_menus' );
+
+    	
+add_theme_support( 'post-thumbnails' );
+
+function my_excerpt_length($length){ 
+    return 20; 
+}
+add_filter('excerpt_length', 'my_excerpt_length');
+
+function new_excerpt_more( $more ) {
+    return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function limit_text($text, $limit) {
+    if (str_word_count($text, 0) > $limit) {
+        $words = str_word_count($text, 2);
+        $pos   = array_keys($words);
+        $text  = substr($text, 0, $pos[$limit]);
+    }
+    return $text;
+}

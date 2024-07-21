@@ -1,8 +1,22 @@
 .instagram {
+  text-align: center;
 
   .heading-1 {
+    max-width: none;
+    margin-bottom: 100px;
+
     span {
       color: $burnt-orange;
     }
+
+    &#instagram-handle {
+      max-width: none;
+      display: inline-block;
+      margin: 100px auto 0;
+    }
+  }
+  .sb_instagram_header,
+  #sbi_load {
+    display: none;
   }
 }

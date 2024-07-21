@@ -16,9 +16,9 @@ background--eggshell">
       <div 
       class="
       col-12">
-        <h3 class="heading-1">Follow me on <span><a href="https://www.instagram.com/littlepeopledietitian/">Instagram</a></span> for more</h3>
+        <h3 class="heading-1">Follow me on <a href="https://www.instagram.com/littlepeopledietitian/"><span>Instagram</span></a> for more</h3>
         <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
-        <a class="heading-1" href="https://www.instagram.com/littlepeopledietitian/">@<span>LITTLEPEOPLE</span>DIETICIAN</a>
+        <a class="heading-1" id="instagram-handle" href="https://www.instagram.com/littlepeopledietitian/">@<span>LITTLEPEOPLE</span>DIETICIAN</a>
       </div>
 
     </div>

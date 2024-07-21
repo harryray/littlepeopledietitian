@@ -1,10 +1,31 @@
 .footer {
 	position: relative;
-	padding: 110px 20px;
+	padding: 44px 40px;
+	background: $burnter-orange;
 
 	@media(max-width: 1024px) {
-		padding: 60px 20px;
+		padding: 44px 20px;
 	}
+
+	&__images {
+    display: flex;
+    height: auto;
+    align-items: flex-start;
+    gap: 45px;
+	}
+
+	a {
+    color: white;
+    text-decoration: underline;
+		font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block;
+	}
+
+	ul {
+		list-style-type:none;
+	}
+
 
 	> .container > .row {
 		margin: auto;
@@ -123,6 +144,14 @@
 		p {
 			padding: 0 15px;
 			margin-bottom: 0;
+			display: block;
+			width: 100%;
+			text-align: center;
+			padding: 0;
+			margin: 10px 0;
+			font-size: 18px;
+			color: #F2EBE5;
+			opacity: 0.5;
 
 			&:first-of-type {
 				position: relative;
@@ -260,12 +289,13 @@
 
 	&__logo {
 		margin-bottom: 40px;
+		text-align: center;
 
 		img {
-			max-width: 131.6px;
+			max-width: 280px;
 
 			@media(min-width: 1024px) {
-				max-width: 170px;
+				max-width: 280px;
 			}
 		}
 

@@ -9,6 +9,7 @@
 						<?php 
 						$footer_logo = get_field('footer_logo','options'); 
 						?>
+						<img src="<?php echo $footer_logo['url'] ?>" alt="<?php echo $footer_logo['title']; ?>" class="logo-img logo-img--footer" />
 					</a>
 				</div>
 				<!-- /logo -->
@@ -17,8 +18,8 @@
 
 		<div class="row">
 			<div class="col-md-6 col-12 footer__images">
-				<img src="" />
-				<img src="" />
+				<img src="https://littlepeopledietitian.harryray.co.uk/wp-content/uploads/2024/07/Group.png" />
+				<img src="https://littlepeopledietitian.harryray.co.uk/wp-content/uploads/2024/07/Website.png" />
 			</div>
 			<!-- nav -->
 			<div class="col-md-6 col-12">
@@ -60,6 +61,7 @@
 <!--<script src="<?php //echo get_stylesheet_directory_uri(); ?>/assets/js/addIndicators.js"></script>-->
 
 <script>
+
 	if(window.innerWidth > 1024) {
 	gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -69,6 +71,7 @@ ScrollSmoother.create({
  smoothTouch: true,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
 });
 }
+
 </script>
 <?php wp_footer(); ?>
 </body>
